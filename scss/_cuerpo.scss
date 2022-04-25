@@ -1,0 +1,84 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #E9ECF4;
+	color:#008000;
+	font-family: arial, sans-serif;}
+h1{
+	font-size: 2.5rem;}
+h2{
+	font-size: 1.6rem;}
+
+.contenedor {
+	background: #ffffff;
+	padding: 20px;
+	margin: 20px auto;
+	width: 80%;
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas: "header header header"
+			 "contenido contenido sidebar"
+			 "caja1 caja2 sidebar"
+			 "footer footer sidebar";}
+
+
+             .contenido {
+                padding: 20px;
+                border-radius: 4px;
+                line-height: 1.5;
+                grid-area: contenido;
+                text-align: center;
+              
+            }
+            .contenido h2 {
+                padding: 20px;
+                border-radius: 4px;
+                line-height: 1.5;
+                grid-area: contenido;
+                text-align: center;
+                color: #008000;
+              
+            }
+
+            .contenido p {
+                padding: 20px;
+                border-radius: 4px;
+                line-height: 1.5;
+                grid-area: contenido;
+                text-align: left;
+            }   
+            
+            .sidebar {
+                padding: 20px;
+                border-radius: 4px;
+                background: white;
+                text-align: center;
+                grid-area: sidebar;
+            }
+
+            .caja1,.caja2 {
+                padding: 10px;
+                border-radius: 4px;
+                background: #008000;
+                color: #fff;
+                height: 100px;
+                display: inline-block;
+                text-align: center;
+            }
+
+            .caja1 {
+                grid-area: caja1;
+            }
+
+            .caja2 {
+                grid-area: caja2;
+            }
+
+            
+    

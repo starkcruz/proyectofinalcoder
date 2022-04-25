@@ -1,0 +1,23 @@
+.aparecer{
+    margin:0px;
+    animation-duration: 8s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        }
+    50% {
+        opacity: 1;
+        }
+    100% {
+      opacity: 0;
+        }
+}
+
+
+.scale:hover{
+    transform: scale(1.1,1.1);
+}
